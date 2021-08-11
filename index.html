@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt" rel="stylesheet">
+    <link href='styles.min.css' rel='stylesheet'>
+</head> 
+<body>
+    <div class="sidebar">
+        <div class="logo-content">
+            <div class="logo">
+                <i class="bx bxl-c-plus-plus"></i>
+                <div class="logo-name">Chongdev</div>
+            </div>
+
+            <div class="menu-toggle"><i class="bx bx-menu" id="btn"></i></div>
+            
+        </div>
+        
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="#">
+                    <i class="bx bx-grid-alt"></i>
+                    <span class="link-name">Dashboard</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#">
+                    <i class="bx bx-user"></i>
+                    <span class="link-name">User</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#">
+                    <i class="bx bx-chat"></i>
+                    <span class="link-name">Messages</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#">
+                    <i class="bx bx-pie-chart-alt-2"></i>
+                    <span class="link-name">Analytics</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#">
+                    <i class="bx bx-folder"></i>
+                    <span class="link-name">File Manager</span>
+                </a>
+                <div class="tooltip">File Manager</div>
+            </li>
+            <li class="nav-item">
+                <a href="#">
+                    <i class="bx bx-cart-alt"></i>
+                    <span class="link-name">Order</span>
+                </a>
+                <div class="tooltip">Order</div>
+            </li>
+            <li class="nav-heart">
+                <a href="#">
+                    <i class="bx bx-grid-alt"></i>
+                    <span class="link-name">Saved</span>
+                </a>
+                <div class="tooltip">Saved</div>
+            </li>
+            <li class="nav-item">
+                <a href="#">
+                    <i class="bx bx-cog"></i>
+                    <span class="link-name">Setting</span>
+                </a>
+                <div class="tooltip">Setting</div>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+
+        let btn = document.querySelector(".menu-toggle");
+        let sidebar = document.querySelector(".sidebar");
+        // let searchBtn = document.querySelector()
+
+        btn.onclick = function () {
+            sidebar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
